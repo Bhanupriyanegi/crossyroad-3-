@@ -12,15 +12,14 @@ function preload()
 carAnimation2=loadAnimation("images/car2.png");
 playerAnimation=loadAnimation("images/Player-03.png");
 logAnimation=loadAnimation("images/log2.png");
- cityAnimation=loadAnimation("images/city1.png");
+
 }
 
 function setup() {
   createCanvas(1366,700);
   carGroup1 = new Group();
   logGroup1 = new Group();
-  city=createSprite(width/2,-1500);
-  city.addAnimation("city",cityAnimation);
+  
   for (var i=0;i<6;i++){
     var bottomGrass1 = createSprite(683,height-50-(i*400),width,grassHeight);
     
